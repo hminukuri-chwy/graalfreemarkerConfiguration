@@ -1,0 +1,89 @@
+# Original chewy .gitignore, merged with official jetbrains .gitignore
+# Reference: https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+
+# User-specific stuff:
+.idea
+generatedsources/**
+
+# jars
+libs/**
+
+# Sensitive or high-churn files:
+*.iml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+build
+.gradle
+
+## File-based project format:
+*.iws
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ
+**/out/
+
+# VSCode
+.vscode/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Misc
+.DS_Store
+
+
+*.zip
+.terraform
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+codepipeline_artifacts
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+backend.tf
+
+# Include override files you do wish to add to version control using negated pattern
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# End of https://www.gitignore.io/api/intellij,terraform
+
+env*sh
+/bin/*
